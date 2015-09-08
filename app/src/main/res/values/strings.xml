@@ -1,8 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">L30DBand_H5</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="select_zewatch_l30p">Select ZeWatch³ in the list of devices</string>
+    <string name="adseting_presetsleep_bedtime">Bed Time</string>
+    <string name="adseting_presetsleep_awaketime">Awake Time</string>
+    <string name="app_name">ZeWatch</string>
+    <string name="adseting_presetsleep_title">Preset Sleep</string>
+    <string name="setting_my_zecircle">My ZeWatch³</string>
+     <string name="sleep_time_err">Sleep time less than 10 minutes!</string>
+    <string name="nav_zewatch3_intro1">The ultimate smartwatch experience </string>
+    <string name="select_you_device">Select your device </string>
+    <string name="zewatch3_pair_tip1">You will receive a pairing request</string>
+    <string name="zewatch3_pair_tip2">Click on the left button to accept pairing</string>
+    <string name="user_zewatch_recorcall">Use ZeWatch to receive and make calls</string>
+    <string name="new_update_available">New Update Available</string>
+    <string name="update_tips">Update in progress\nThis operation can take 5-10minutes</string>
+    <string name="update_complete">Update Complete</string>
+    <string name="update_fial">Update Failed</string>
+    <string name="start_now">START NOW</string>
+    <string name="volume">Volume</string>
+    <string name="update_title">Update</string>
+    <string name="binding_select_accessory">Select An Accessory</string>
+    <!-- 关于 -->
+     <string name="AboutInfo">Founded in January 2013, Kronoz LLC is a Swiss company that manufactures, designs and develops products intended to improve our increasingly mobile, connected and digital lifestyles.-Under the MyKronoz brand, it strives to expand and facilitate the mobile-user experience with stylish, intuitive and functional accessories. -With a simple and unique approach to mobile tech, the goal of MyKronoz is to offer a complete range of connected watches, catering to the needs and tastes of the world\'s various user types. -As a result, the company\'s engineers continuously develop innovative, wearable devices in order to release new models every quarter.</string>
+    <!-- reminders -->
+    <string name="reminderTips">You can set up to 6 daily reminders</string>
+    <string name="reminderTips1">Choose the type of reminder</string>
+    <string name="reminderTips2">Enter the preferred time and day</string>
+    <string name="reminderTips3">Once the reminder time is reached,ZeWatch³ \n\rwill gently vibrate and display the corresponding\n\ricon to alert you.</string>
+    <!-- 菜单 -->
+    <string name="homeBtn">Activity</string>
+    <string name="goalBtn">Goals</string>
+    <string name="remindBtn">Reminders</string>
+    <string name="setupBtn">Settings</string>
+    <string name="groupsBtn">Groups</string>
+    <!-- 首页 -->
+    <string name="connectBlueBtn">Connect</string>
+    <string name="Today">TODAY</string>
+    <string name="Week">WEEK</string>
+    <string name="Month">MONTH</string>
+    <string name="steps">steps</string>
+    <string name="miles">miles</string>
+    <string name="kcal">kcal</string>
+    <string name="km">km</string>
+    <string name="hours">hours</string>
+    <string name="Goal">Goal</string>
+    <string name="Goals">Goals</string>
+    <string name="GOAL">GOAL</string>
+    <string name="pound">pound</string>
+    <string name="KM">KM</string>
+    <string name="MILES">MILES</string>
+    <string name="KCAL">KCAL</string>
+    <string name="Loading">Loading</string>
+    <string name="NoData">No more data</string>
+    <string name="LoginFailed">Login failed, please re login</string>
+    <string name="lightuUp">Please light up the device screen</string>
+    <string name="TryAgain">Try again</string>
+    <string name="ServerBusy">Server busy, please try again</string>
+    <string name="Network_unavailable">Network is unavailable, please try again later</string>
+    <string name="DeviceConnected">Synced to ZeWatch³</string>
+    <string name="Binding">Binding</string>
+    <string name="DailyGoal">DAILY GOAL</string>
+    <string name="STEPS">STEPS</string>
+    <string name="SLEEPTIME">SLEEP TIME</string>
+    <string name="LIGHTSLEEP">LIGHT SLEEP</string>
+    <string name="DEEPSLEEP">DEEP SLEEP</string>
+    <string name="AWAKE">AWAKE</string>
+    <string name="LightSleep">Light Sleep</string>
+    <string name="h">h</string>
+    <string name="min">min</string>
+    <string name="AwakeFor">Awake for</string>
+    <string name="DeepSleep">Deep sleep</string>
+    <string name="FellAsleep">Fell Asleep in</string>
+    <string name="Awake">Awake</string>
+    <string name="times">times</string>
+    <string name="TatalSleepTime">Total sleep</string>
+    <string name="goal">goal</string>
+    <!-- 目标设置 -->
+    <string name="MyGoals">MY DAILY GOALS</string>
+    <string name="STEPS1">STEPS</string>
+    <string name="DISTANCE">DISTANCE</string>
+    <string name="ACTIVEMINUTES">ACTIVE MINUTES</string>
+    <string name="CALORIES">CALORIES</string>
+    <string name="SLEEP">SLEEP</string>
+    <!-- 提醒 -->
+    <string name="Modify">Edit</string>
+    <string name="ADDNEWREMINDER">ADD A NEW REMINDER</string>
+    <string name="MoveToRemind">Move to remind</string>
+    <string name="Nomorehan20reminders">No more than 20 reminders</string>
+    <string name="Ok">Ok</string>
+    <string name="No">No</string>
+    <string name="Yes">Yes</string>
+    <string name="NeedSynchronized">Need to be synchronized to a pedometer?</string>
+    <string name="PleaseTurnOn">Please turn on the display</string>
+    <string name="NoMoreReminders">No more than 20 reminders</string>
+    <string name="deviceScreen">device screen</string>
+    <string name="Successfully">Successful</string>
+    <string name="Failed">Failed</string>
+    <string name="synchronizedPedometer">Synchronize to ZeWatch³?</string>
+    <string name="CustomRepeat">Custom Repeat</string>
+    <string name="RemindContent">Add a note</string>
+    <string name="RemindTime">Time</string>
+    <string name="Save">Save</string>
+    <string name="Defined">Defined</string>
+    <string name="Medicine">Medicine</string>
+    <string name="Eat">Eat</string>
+    <string name="Sleep">Sleep</string>
+    <string name="WakeUp">Wake up</string>
+    <string name="Sport">Sport</string>
+    <string name="PersonalSuccess">Submitted successfully</string>
+    <string name="InputContent">Must input content</string>
+    <string name="TimeReminders">Set reminder time</string>
+    <string name="SelectReminderWeek">Select the day you want the reminder to repeat</string>
+    <string name="SelectTypeEvent">Please select reminder type</string>
+    <string name="Delete">Delete</string>
+    <!-- 设置 -->
+    <string name="MYPROFILE">MY PROFILE</string>
+    <string name="ADVANCEDSETTINGS">ADVANCED SETTINGS</string>
+    <string name="SETUPZeWatch">SET UP ZeWatch³</string>
+    <string name="HELP">HELP</string>
+    <string name="ABOUTUS">ABOUT US</string>
+    <string name="RESETZeWatch">RESET ZeWatch³</string>
+    <string name="LOGOUT">LOG OUT</string>
+    <string name="DeterminedToExit">Exit from the current account？</string>
+    <string name="advanced_setting1">Advanced Settings</string>
+    <string name="ABOUTUSEX">About Us</string>
+    <string name="Country">Country</string>
+    <string name="presetSleep">PRESET SLEEP</string>
+    <string name="Language">Language</string>
+    <string name="TimeFormat">Time Format</string>
+    <string name="LengthUnits">Length Units</string>
+    <string name="WeightUnits">Weight Units</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="Username">Username :</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="Gender">Gender :</string>
+    <string name="Height">Height :</string>
+    <string name="Weight">Weight :</string>
+    <string name="Birthday">Birthday :</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Hour12">12-Hour</string>
+    <string name="Hour24">24-Hour</string>
+    <string name="Cent_Kilometers">Centimeters,Kilometers</string>
+    <string name="FeetMiles">Feet,Miles</string>
+    <string name="Kilograms">Kilograms</string>
+    <string name="Pounds">Pounds</string>
+    <string name="kg">kg</string>
+    <string name="week">WEEK</string>
+    <string name="months">MONTH</string>
+    <string name="OldPassWord">Old Password</string>
+    <string name="NewPassWord">New Password</string>
+    <string name="RepeatedPassword">Repeated Password</string>
+    <string name="InputOldPassword">Must input old password</string>
+    <string name="MInputNewPassword">Must input new password</string>
+    <string name="OldIncorrect">The old password is incorrect</string>
+    <string name="InputRepeatedPassword">Must input repeated password</string>
+    <string name="NotConformity">The password is not conformity with the one you input just now</string>
+    <string name="RevisedSuccessfully">Revised successfully</string>
+    <!-- 绑定 -->
+    <string name="ZeWatch">ZeWatch³</string>
+    <string name="SearchingZeWatch">Searching for ZeWatch³</string>
+    <string name="MakeSureZeWatch">Make sure ZeWatch³ is nearby and that its display is turned on</string>
+    <string name="TRYAGAIN">TRY AGAIN</string>
+    <string name="CurrentUserWatches">Your ZeWatch³ has already been paired with another email address. For privacy and security reasons, please contact %s and send us a screenshot including the D/N number indicated below. Our team will assist you to proceed further with your pairing process.</string>
+    <string name="CurrentUserEmailTip01">你确定使用这个邮箱</string>
+	<string name="CurrentUserEmailTip02">绑定固件</string>
+    <string name="binding">binding</string>
+    <string name="tips">Information</string>
+    <string name="InitializationFailed">Initialization failed</string>
+    <string name="EnableBluetooth">Enable Bluetooth on your android device</string>
+    <string name="NEXT">NEXT</string>
+    <string name="ClickOnSetUp">Click on Set up below\nPress ZeWatch³ button to turn on the display\nZeWatch³ display must be illuminated to set up</string>
+    <string name="SETUP">SET UP</string>
+    <string name="SuccessfulSetUp">Successful Set-up!</string>
+    <string name="SetUpFailed">Set-up failed!</string>
+    <string name="HELLP">Help</string>
+    <string name="FrequentlyAskedQuestions">Frequently asked questions</string>
+    <string name="TermsService">Terms of service</string>
+    <string name="ZeWatchVersion">ZeWatch³ App Version</string>
+    <string name="Copyright">  Copyright,Kronoz LLC\nAll Rights Reserved</string>
+    <string name="help_firmware_version">Firmware version</string>
+    <string name="contactSupport">CONTACT CUSTOMER SUPPORT</string>
+    <string name="Contactsupport">Contact support</string>
+    <string name="Error">Error</string>
+    <string name="Syncing1">Syncing</string>
+    <string name="dailyGoals1">You have reached %@%% of your daily goals</string>
+    <string name="SETUPZeWatch1">SET UP ZeWatch³</string>
+    <string name="UNPAIRZeWatch">UNPAIR ZeWatch³</string>
+    <!-- 注册登录 -->
+    <string name="SIGNUP">SIGN UP</string>
+    <string name="LOGIN">LOG IN</string>
+    <string name="ZeWatchWristband">ZeWatch³ keeps you connected to your phone and displays your activity and sleep data in real time, 24/7!</string>
+    <string name="Email">Email:</string>
+    <string name="Password">Password:</string>
+    <string name="Logging">Loading</string>
+    <string name="RESETPASSWORD">RESET MY PASSWORD</string>
+    <string name="InputMailbox">Must input email address</string>
+    <string name="InputPassword">Must input password</string>
+    <string name="InputUsername">Must input username</string>
+    <string name="ChooseGender">Please choose gender</string>
+    <string name="InputHeight">Must input height</string>
+    <string name="InputWeight">Must input weight</string>
+    <string name="InputBirthDay">Must input birthdate</string>
+    <string name="WrongMailFormat">Wrong email format</string>
+    <string name="NotSupportPassword">Does not support password</string>
+    <string name="WrongUserName">wrong username or password.</string>
+    <string name="AgreeService">I agree with the Terms of service and privacy policy</string>
+    <string name="Password6to16">Please input password between 6 to 16 character</string>
+    <string name="Username2to12">Please input username between 2 to 12 character</string>
+    <string name="ReadProtocol">Please read and confirm the user protocol</string>
+    <string name="MailUed">Email address already in use</string>
+    <string name="forgot_password">forgot your password?</string>
+    <string name="EveryDay">Everyday</string>
+    <string name="START_TIME">START TIME</string>
+    <string name="END_TIME">END TIME</string>
+    <string name="Exit_Sleep">Exit sleep</string>
+    <string name="EnterNum">Please enter number</string>
+    <string name="Edit">Edit</string>
+    <string name="Done">Done</string>
+    <string name="LastSynced">Last synced</string>
+    <string name="Yesterday">yesterday</string>
+    <string name="today">today</string>
+    <string name="Battery">Battery</string>
+    <string name="cm">cm</string>
+    <string name="ft">ft</string>
+    <string name="lbs">lbs</string>
+
+    <!-- 添加 -->
+    <string name="Reminder_type">Reminder type</string>
+    <string name="Brightness">Brightness</string>
+    <string name="Ring_Mode">Ring Mode</string>
+    <string name="DateFormat">Date Format</string>
+    <string name="SuccessfulSetup">Successful Set up!</string>
+    <string name="SETUPYOURZeWatch">SET  UP  YOUR ZeWatch³</string>
+    <string name="PressZeWatchbutton">Press ZeWatch³ button to turn on the display ZeWatch³ display must be illuminated to set up</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Twitter">Twitter</string>
+
+    <!-- 星期 -->
+    <string name="Sun">Sun</string>
+    <string name="Mon">Mon</string>
+    <string name="Tues">Tues</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+
+    <string-array name="weeklist">
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+    <string-array name="countries">
+        <item>Algeria</item>
+		<item>Andorra</item>
+		<item>Argentina</item>
+		<item>Armenia</item>
+		<item>Australia</item>
+		<item>Austria</item>
+		<item>Azerbaijan</item>
+		<item>Bahamas</item>
+		<item>Bahrain</item>
+		<item>Belgium</item>
+		<item>Belarus</item>
+		<item>Brazil</item>
+		<item>Bulgaria</item>
+		<item>Cambodia</item>
+		<item>Canada</item>
+		<item>Chile</item>
+		<item>China</item>
+		<item>Colombia</item>
+		<item>Costa Rica</item>
+		<item>Croatia</item>
+		<item>Cyprus</item>
+		<item>Czech Republic</item>
+		<item>Denmark</item>
+		<item>Deutschland</item>
+		<item>Dominican Republic</item>
+		<item>Ecuador</item>
+		<item>Egypt</item>
+		<item>El Salvador</item>
+		<item>Estonia</item>
+		<item>Finland</item>
+		<item>France</item>
+		<item>Greece</item>
+		<item>Guatemala</item>
+		<item>Honduras</item>
+		<item>Hong Kong</item>
+		<item>Hungary</item>
+		<item>Iceland</item>
+		<item>India</item>
+		<item>Indonesia</item>
+		<item>Iran</item>
+		<item>Ireland</item>
+		<item>Israel</item>
+		<item>Italy</item>
+		<item>Jamaica</item>
+		<item>Japan</item>
+		<item>Jordan</item>
+		<item>Kazakhstan</item>
+		<item>Kenya</item>
+		<item>Kuwait</item>
+		<item>Kyrgyzstan</item>
+		<item>Latvia</item>
+		<item>Lebanon</item>
+		<item>Liechtenstein</item>
+		<item>Lithuania</item>
+		<item>Luxembourg</item>
+		<item>Madagascar</item>
+		<item>Malaysia</item>
+		<item>Malta</item>
+		<item>Mauritania</item>
+		<item>Mauritius</item>
+		<item>Mexico</item>
+		<item>Morocco</item>
+		<item>Netherlands</item>
+		<item>New Zealand</item>
+		<item>Nicaragua</item>
+		<item>Niger</item>
+		<item>Nigeria</item>
+		<item>Norway</item>
+		<item>Oman</item>
+		<item>Panama</item>
+		<item>Paraguay</item>
+		<item>Peru</item>
+		<item>Philippines</item>
+		<item>Poland</item>
+		<item>Portugal</item>
+		<item>Qatar</item>
+		<item>Romania</item>
+		<item>Russia</item>
+		<item>Saudi Arabia</item>
+		<item>Senegal</item>
+		<item>Serbia</item>
+		<item>Seychelles</item>
+		<item>Sierra Leone</item>
+		<item>Singapore</item>
+		<item>Slovakia</item>
+		<item>Slovenia</item>
+		<item>South Africa</item>
+		<item>South Korea</item>
+		<item>Spain</item>
+		<item>Sweden</item>
+		<item>Switzerland</item>
+		<item>Syria</item>
+		<item>Taiwan</item>
+		<item>Thailand</item>
+		<item>Tunisia</item>
+		<item>Turkey</item>
+		<item>Ukraine</item>
+		<item>United Arab Emirates</item>
+		<item>United Kingdom</item>
+		<item>United States of America</item>
+		<item>Uruguay</item>
+		<item>Venezuela</item>
+		<item>Vietnam</item>
+		<item>Puerto Rico</item>
+    </string-array>
+    <string-array name="language">
+        <item>English</item>
+        <item>China</item>
+        <item>Deutsch</item>
+        <item>Dutch</item>
+        <item>Espanol</item>
+        <item>Francais</item>
+        <item>Italiano</item>
+    </string-array>
+<!-- <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>  -->
+    <string-array name="month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+
+    <string name="Syncing">Syncing....</string>
+    <string name="dailyGoals">You have reached %@%% of your daily goals</string>
+    <string name="PressZeWatch2">Press ZeWatch2 upper left button until you hear\na beep followed by a blinking icon on the screen</string>
+    <string name="PressZeWatch3">Press ZeWatch²  left button until you hear\na beep followed by a blinking icon on the screen</string>
+    <string name="GototheBluetooth">Go to the Bluetooth devices list in the Bluetooth settings of your phone</string>
+    <string name="TapZeWatch2">Tap ZeWatch2</string>
+    <string name="Connectedstatusconfirms">Connected status confirms your successful pairing</string>
+    <string name="Aphoneiconwill">A phone icon will appear on the status bar at the top of ZeWatch³ screen</string>                        
+    <string name="Ifpairingfailed">If pairing failed please repeat the same steps</string>
+    <string name="ReSetTip">This operation will delete all your activity data and restore ZeWatch³ to its original settings.</string>
+    <string name="ANTI_LOST">ANTI-LOST</string>
+    <string name="SMS">SMS</string>
+    <string name="Share">Share</string>
+    <string name="MISSED_CALL">MISSED CALL</string>
+	<string name="notice_email">EMAIL</string>
+	<string name="notice_schedule">EVENT</string>
+	<string name="notice_social">SOCIAL</string>
+    <string name="Notifications">Notifications</string>
+    <string name="MailSubject">MyKronoz ZeWatch - Activity Report</string>
+    <string name="NOTIFICATIONS">NOTIFICATIONS</string>
+    <string name="Repeated_PassWord">Repeated PassWord</string>
+    <string name="NeedCallsZeFit">To answer incoming phone call on ZeWatch³\n follow the next steps</string>
+    <!-- 补充 -->
+    <string name="press_again_exit">Exit from the current account？</string>
+    <string name="no_more_data">No more data</string>
+    <string name="InputNewPassword">Must input new password</string>
+    <string name="DDMMYY">DD/MM/YY</string>
+    <string name="MMDDYY">MM/DD/YY</string>
+    <string name="DayoftheweekMMDD">Day of the week-MM-DD</string>
+    
+     <string name="DeviceTimeDisplayFormat3">Day of the week-MM-DD</string>
+    
+    <string name="accessibility_description">When ZeWatch³ is on, it will help you to synchorize Email or Social messages reminder to your smart watch.</string>
+    <string name="update_firmware_zefit_available">A new version of ZeWatch³ is available!</string>
+    <string name="update_firmware_title">To update ZeWatch³ software, please follow these steps:\n </string>
+    <string name="update_firmware_followstep">Follow these steps: </string>
+    <string name="update_firmware_visit">Visit </string>
+    <string name="update_firmware_website">http://app-zewatch2.mykronoz.com/softwareAppDownload</string>
+    <string name="update_firmware_hint1">Download and install ZeWatch³ software on your computer\n</string>
+    <string name="update_firmware_hint2">Plug ZeWatch³ into a powered USB port\n</string>
+    <string name="update_firmware_hint3">Updating ZeWatch³ can take 5 to 10 minutes</string>
+    <string name="update_firmware_hint4"></string>
+    <string name="Lengthtoolong">Length too long</string>
+    
+    <string name="Download_now">Download now</string>
+    <string name="Firmware_upgrade_required">Firmware upgrade required \nTo continue using your ZeWatch2, you must upgrade the current version of its firmware</string>
+
+
+
+    <string name="sleep_start_item">START  SLEEP NOW</string>
+    <string name="sleep_add_item">ADD SLEEP</string>
+    <!-- 手工增加睡眠 -->
+    <string name="sleep_add_title">Add sleep</string>
+    <string name="sleep_add_awaketime">AWAKE TIME</string>
+    <string name="sleep_add_bedtime">BED TIME</string>
+    <string name="sleep_title">Sleep</string>
+    
+    <string name="adseting_presetsleep_disable">Disable auto sleep</string>
+    <string name="adseting_presetsleep_enable">Enable auto sleep</string>
+    
+	<string name="sleeps_hint_hours">h</string>
+    <string name="sleeps_hint_mins">min</string>
+    <string name="today1">today</string>
+    
 </resources>
