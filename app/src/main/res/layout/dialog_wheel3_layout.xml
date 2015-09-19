@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_btns"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        >
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_left_circle_selector"
+            android:text="@string/Cancel" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginRight="22dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_right_circle_selector"
+            android:text="@string/Ok"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kankan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_btns"
+        android:orientation="horizontal" >
+
+        <com.appscomm.l30d.util.widget.WheelView
+            android:id="@+id/wheel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.appscomm.l30d.util.widget.WheelView
+            android:id="@+id/wheel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.appscomm.l30d.util.widget.WheelView
+            android:id="@+id/wheel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -6,14 +6,14 @@
 
     <include
         android:id="@+id/ic_title"
-        layout="@layout/common_title" />
+        layout="@layout/ic_common_title" />
 
 
     <ImageView
         android:id="@+id/iv_watch_op" 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/act_bind_watch"
+        android:src="@drawable/img_bind_watch"
         android:layout_centerInParent="true"
         />
     <TextView

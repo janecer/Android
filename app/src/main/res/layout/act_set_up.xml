@@ -5,14 +5,14 @@
 
     <include
         android:id="@+id/Set_up"
-        layout="@layout/common_title" />
+        layout="@layout/ic_common_title" />
 
     <ImageView
         android:id="@+id/iv_watch_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@drawable/act_bind_watch" />
+        android:background="@drawable/img_bind_watch" />
 
     <Button
         android:id="@+id/btn_set_up"

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:id="@+id/bg_rl"
+    >
+    
+	<include
+		android:id="@+id/ic_title"
+		layout="@layout/ic_common_title" />
+        
+
+        <LinearLayout
+			android:id="@+id/ll_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+	        <RelativeLayout
+	                android:id="@+id/rl_sleep_preset_switch"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+					android:padding="16dp"
+	                android:background="#ffffff" >
+	
+	                <TextView
+	                    android:id="@+id/tv_title_ringmode"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_vertical"
+	                    android:text="@string/adseting_presetsleep_enable"
+	                    android:layout_toLeftOf="@+id/cb_ring_btn"
+	                    android:textSize="18sp"
+						android:textColor="@color/black"/>
+	
+	                <CheckBox
+	                    android:id="@+id/cb_ring_btn"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"
+	                    android:background="@drawable/sw_btn"
+	                android:button="@null"  />
+	        </RelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:background="@color/gray4"
+				/>
+	        
+	        <RelativeLayout
+	            android:id="@+id/rl_sleep_start"
+	            android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="16dp"
+	            android:background="#ffffff" >
+	
+	            <TextView
+	                android:id="@+id/tv_sleep_start_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical"
+	                android:text="@string/adseting_presetsleep_bedtime"
+	                android:textSize="18sp"
+					android:textColor="@color/black"/>
+	
+	            
+	            <TextView 
+	                android:id="@+id/tv_sleep_start_time"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="23:00"
+	                android:layout_alignParentRight="true"
+	                android:layout_centerVertical="true"
+	                android:textColor="@color/red"
+	                />
+	        </RelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:background="@color/gray4"
+				/>
+	        
+	        	        
+	        <RelativeLayout
+	            android:id="@+id/rl_sleep_end"
+	            android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:padding="16dp"
+	            android:background="#ffffff" >
+	
+	            <TextView
+	                android:id="@+id/tv_sleep_end_title"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical"
+	                android:text="@string/adseting_presetsleep_awaketime"
+	                android:textSize="18sp"
+					android:textColor="@color/black" />
+	
+	            
+	            <TextView 
+	                android:id="@+id/tv_sleep_end_time"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="07:00"
+					android:layout_alignParentRight="true"
+	                android:layout_centerVertical="true"
+	                android:textColor="@color/red"
+	                />
+	        </RelativeLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_alignParentBottom="true"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:background="@color/gray4"
+				/>
+        </LinearLayout>
+</LinearLayout>

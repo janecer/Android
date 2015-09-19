@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/canvas" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_button_back"
+            android:background="@drawable/btn_selector_nocir"
+            android:scaleType="center"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/remindBtn"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/Save"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/btn_selector_nocir"
+            />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="09:25"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="38dp"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tv_remind_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time_title"
+        android:layout_margin="12dp"
+        android:textStyle="bold"
+        android:text="@string/SelectTypeEvent"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remind_title"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_sport"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:button="@null"
+                android:drawableTop="@drawable/remind_sport_selector"
+                android:gravity="center"
+                android:text="@string/Sport"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sleep"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:button="@null"
+                android:drawableTop="@drawable/remind_sleep_selector"
+                android:gravity="center"
+                android:text="@string/Sleep"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/rb_eat"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:button="@null"
+                android:drawableTop="@drawable/remind_eat_selector"
+                android:gravity="center"
+                android:text="@string/Eat"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/rb_medicine"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:button="@null"
+                android:drawableTop="@drawable/remind_medicine_selector"
+                android:gravity="center"
+                android:text="@string/Medicine"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/rb_wake_up"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:button="@null"
+                android:drawableTop="@drawable/remind_wakeup_selector"
+                android:gravity="center"
+                android:text="@string/WakeUp"
+                android:textSize="8sp" />
+
+            <RadioButton
+                android:id="@+id/rb_defined"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:button="@null"
+                android:drawableTop="@drawable/remind_define_selector"
+                android:gravity="center"
+                android:text="@string/Defined"
+                android:textSize="8sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_week_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:textStyle="bold"
+        android:layout_below="@id/l1"
+        android:text="@string/SelectTypeEvent"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_week_title"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Mon"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Tues"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Wed"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Thu"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Fri"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Sat"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/changeblue"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Sun"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -5,7 +5,7 @@
 
     <include
         android:id="@+id/Set_up"
-        layout="@layout/common_title" />
+        layout="@layout/ic_common_title" />
 
     <ImageView
         
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/act_enablebluetooth"
+        android:src="@drawable/img_enablebluetooth"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         />

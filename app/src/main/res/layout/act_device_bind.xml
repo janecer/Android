@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/ic_common_title" />
+
+
+    <ImageView
+	        android:id="@+id/iv_watch_op" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/img_device_bind"
+	        android:layout_centerInParent="true"
+	        />
+    
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:text="设备出现蓝牙图标后，点击设备按键"
+        android:layout_below="@id/iv_watch_op"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btn_set_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/SETUPZeWatch"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

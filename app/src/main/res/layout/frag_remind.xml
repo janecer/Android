@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/canvas" >
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_add_reminder"
+            android:background="@drawable/btn_selector_nocir"
+            android:scaleType="center"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/remindBtn"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/Edit"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/btn_selector_nocir"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_reminds"
+        android:layout_below="@id/rl_title"
+        android:listSelector="@color/white"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+</RelativeLayout>

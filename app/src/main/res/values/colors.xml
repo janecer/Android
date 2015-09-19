@@ -4,6 +4,7 @@
     <color name="transparent">#00000000</color>
     <color name="transparent2">#80065e8d</color>
     <color name="black">#000000</color>
+    <color name="black1">#2C2C2C</color>
     <color name="green">#33CC00</color>
     <color name="white">#ffffff</color>
     <color name="yellow">#FFFF00</color>
@@ -15,6 +16,7 @@
     <color name="gray1">#9E9E9E</color>
     <color name="gray2">#E3E3E3</color>
     <color name="gray3">#818181</color>
+    <color name="gray4">#D5D4D3</color>
     <color name="orange">#FF7F00</color>
     <color name="list_item_selected_bg">#ADFF2F</color>
     <color name="main_bg">#DCDDDD</color>
@@ -35,5 +37,7 @@
     <color name="table_no">#239AD2</color>
     <color name="table_click">#1D799E</color>
 	<color name="btn_start_sleep">#3F3534</color>
-	
+    <color name="bottom_nav">#F5F5F5</color>
+    <color name="bottom_nav_font_normal">#AFAFAF</color>
+    <color name="bottom_nav_font_select">#5A5657</color>
 </resources>

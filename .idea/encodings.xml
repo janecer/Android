@@ -3,9 +3,14 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/app/libs/xUtils-2.6.14.jar" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/BaseActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/BaseFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/domain/dbentity/SleepData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/domain/dbentity/SportsData.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/util/TimerUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/ui/adapter/RemindsAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/ui/view/FragmentStack.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/util/AppManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/appscomm/l30d/util/TimerUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/lv_remind_item.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

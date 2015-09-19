@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/ic_common_title" />
+
+
+    <ImageView
+	        android:id="@+id/iv_watch_op" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/img_bind_watch"
+	        android:layout_centerInParent="true"
+	        />
+    
+    <RelativeLayout
+        android:id="@+id/rl_select_an_acc" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selects_device_bg"
+        >
+        
+         <TextView 
+	        android:id="@+id/tv_title1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="12dp"
+	        android:gravity="center"
+	    	android:text="@string/binding_select_accessory"
+             android:textColor="@color/white"
+			android:textStyle="bold"
+	        />
+        
+        <ListView
+           android:id="@+id/lv_ble_devices"
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:listSelector="#00000000"
+           android:layout_marginLeft="18dp"
+       	   android:layout_marginRight="18dp"
+       	   android:layout_below="@id/tv_title1"
+            android:textColor="@color/white"
+            android:background="@drawable/transpa_circle_bg"
+       	   android:dividerHeight="1dp"
+       	   android:divider="@color/gray"
+           />
+	</RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:text="没有搜素到设备？"
+        android:layout_below="@id/rl_select_an_acc"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btn_set_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/SETUPZeWatch"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
