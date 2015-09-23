@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:id="@+id/iv_left"
+                android:background="@drawable/predate_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@id/tv_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day"
+                android:layout_gravity="center_vertical"
+                android:text="周五,2015年22月22日" />
+            <ImageView
+                android:id="@+id/iv_right"
+                android:background="@drawable/nextdate_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_views"
+            android:layout_below="@id/ll_time_title"
+            android:layout_above="@+id/rl_goals"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:id="@+id/rl_goals"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_current_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="0"
+                        android:textColor="@color/canvas"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_current_val_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_current_val"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/tv_current_val"
+                        android:text="STEPS"
+                        android:textColor="@color/canvas" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="bottom"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_goals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:text="0%"
+                        android:textColor="@color/canvas"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_goals_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:text="@string/Goal"
+                        android:textColor="@color/canvas"/>
+                </LinearLayout>
+            </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

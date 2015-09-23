@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/canvas" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/homeBtn"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_syn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_syn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_selector_nocir"
+            android:padding="8dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_time_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/small_orange"
+        android:layout_below="@id/rl_title"
+        >
+        <ImageView
+            android:id="@+id/iv_pre_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/predate_selector"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Today"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/iv_next_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nextdate_selector"
+            android:layout_alignParentRight="true"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/iv_next_time"
+            android:background="@color/gray4"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@id/rl_time_nav"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_step_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp" >
+            <TextView
+                android:id="@+id/tv_step_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/STEPS"
+                android:textColor="@color/gray"
+                android:layout_above="@+id/fl_step"
+                android:textSize="16sp" />
+            <FrameLayout
+                android:id="@+id/fl_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_step"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                >
+                <ProgressBar
+                    android:id="@+id/pb_step"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/barcolor" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/pb_step"
+                    android:layout_toLeftOf="@+id/iv_step"
+                    android:background="@color/gray4"
+                    android:layout_gravity="bottom"
+                    />
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8000"
+                android:textStyle="bold"
+                android:textColor="@color/canvas"
+                android:layout_below="@+id/fl_step"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/steps"
+                android:textColor="@color/gray"
+                android:layout_toRightOf="@id/tv_step"
+                android:layout_alignBottom="@id/tv_step"
+                android:layout_marginLeft="6dp" />
+
+            <ImageView
+                android:id="@+id/iv_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/img_activity_steps"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/pb_step"
+            android:layout_toLeftOf="@+id/iv_step"
+            android:background="@color/gray5"
+            android:layout_gravity="bottom"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_dis_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp" >
+            <TextView
+                android:id="@+id/tv_dis_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DISTANCE"
+                android:textColor="@color/gray"
+                android:layout_above="@+id/fl_dis"
+                android:textSize="16sp" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_dis"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                >
+                <ProgressBar
+                    android:id="@+id/pb_dis"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:progress="60"
+                    android:progressDrawable="@drawable/barcolordis" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/pb_step"
+                    android:layout_toLeftOf="@+id/iv_step"
+                    android:background="@color/gray4"
+                    android:layout_gravity="bottom"
+                    />
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.17"
+                android:textStyle="bold"
+                android:textColor="@color/canvas"
+                android:layout_below="@+id/fl_dis"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/km"
+                android:textColor="@color/gray"
+                android:layout_toRightOf="@id/tv_dis"
+                android:layout_alignBottom="@id/tv_dis"
+                android:layout_marginLeft="6dp" />
+
+            <ImageView
+                android:id="@+id/iv_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/img_activity_distance"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/pb_step"
+            android:layout_toLeftOf="@+id/iv_step"
+            android:background="@color/gray5"
+            android:layout_gravity="bottom"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_cal_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp" >
+            <TextView
+                android:id="@+id/tv_cal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CALORIES"
+                android:textColor="@color/gray"
+                android:layout_above="@+id/fl_cal"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_cal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_cal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                >
+                <ProgressBar
+                    android:id="@+id/pb_cal"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/barcolorcal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/pb_step"
+                    android:layout_toLeftOf="@+id/iv_step"
+                    android:background="@color/gray4"
+                    android:layout_gravity="bottom"
+                    />
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.440"
+                android:textStyle="bold"
+                android:textColor="@color/canvas"
+                android:layout_below="@+id/fl_cal"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kcal"
+                android:textColor="@color/gray"
+                android:layout_toRightOf="@id/tv_cal"
+                android:layout_alignBottom="@id/tv_cal"
+                android:layout_marginLeft="6dp" />
+
+            <ImageView
+                android:id="@+id/iv_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/img_activity_calories"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/pb_step"
+            android:layout_toLeftOf="@+id/iv_step"
+            android:background="@color/gray5"
+            android:layout_gravity="bottom"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_sleep_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp" >
+            <TextView
+                android:id="@+id/tv_sleep_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SLEEP"
+                android:textColor="@color/gray"
+                android:layout_above="@+id/fl_sleep"
+                android:textSize="16sp" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_sleep"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_centerInParent="true"
+                >
+                <ProgressBar
+                    android:id="@+id/pb_sleep"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/barcolorsleep" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/pb_step"
+                    android:layout_toLeftOf="@+id/iv_step"
+                    android:background="@color/gray4"
+                    android:layout_gravity="bottom"
+                    />
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textStyle="bold"
+                android:textColor="@color/canvas"
+                android:layout_below="@+id/fl_sleep"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hours"
+                android:textColor="@color/gray"
+                android:layout_toRightOf="@id/tv_sleep"
+                android:layout_alignBottom="@id/tv_sleep"
+                android:layout_marginLeft="6dp" />
+
+            <ImageView
+                android:id="@+id/iv_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/img_activity_sleep"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+</RelativeLayout>

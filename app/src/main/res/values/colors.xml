@@ -17,6 +17,7 @@
     <color name="gray2">#E3E3E3</color>
     <color name="gray3">#818181</color>
     <color name="gray4">#D5D4D3</color>
+    <color name="gray5">#EEEEEE</color>
     <color name="orange">#FF7F00</color>
     <color name="list_item_selected_bg">#ADFF2F</color>
     <color name="main_bg">#DCDDDD</color>
@@ -40,4 +41,5 @@
     <color name="bottom_nav">#F5F5F5</color>
     <color name="bottom_nav_font_normal">#AFAFAF</color>
     <color name="bottom_nav_font_select">#5A5657</color>
+    <color name="small_orange">#F5F5F5</color>
 </resources>

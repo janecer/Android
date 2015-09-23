@@ -28,7 +28,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden"
             android:name=".ui.activity.MainActivity"  />
 
         <activity
